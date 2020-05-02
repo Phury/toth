@@ -5,7 +5,7 @@ APP_PORT = int(os.environ['PORT'])
 
 settings = {
     'MONGO_HOST': os.environ['MONGO_HOST'],
-    'MONGO_PORT': os.environ['MONGO_PORT'],
+    'MONGO_PORT': int(os.environ['MONGO_PORT']),
     'MONGO_USERNAME': os.environ['MONGO_USERNAME'],
     'MONGO_PASSWORD': os.environ['MONGO_PASSWORD'],
     'MONGO_DBNAME': os.environ['MONGO_DBNAME'],
