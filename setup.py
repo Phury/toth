@@ -1,7 +1,6 @@
 from eve import Eve
 import os
 
-mongodb://<dbuser>:<dbpassword>@ds159020.mlab.com:59020/toth
 print(os.environ['PORT'])
 print(os.environ['MONGO_HOST'])
 print(os.environ['MONGO_PORT'])
