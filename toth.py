@@ -1,12 +1,7 @@
 from eve import Eve
 import os
 
-print(os.environ['PORT'])
-print(os.environ['MONGO_HOST'])
-print(os.environ['MONGO_PORT'])
-print(os.environ['MONGO_USERNAME'])
-print(os.environ['MONGO_PASSWORD'])
-print(os.environ['MONGO_DBNAME'])
+APP_PORT = int(os.environ['PORT'])
 
 settings = {
     'MONGO_HOST': os.environ['MONGO_HOST'],
@@ -25,4 +20,4 @@ app = Eve(settings=settings)
 
 
 if __name__ == '__main__':
-   app.run(port=os.environ['PORT'])
+   app.run(port=APP_PORT)
