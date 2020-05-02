@@ -1,1 +1,1 @@
-web:gunicorn toth:app
+web gunicorn toth:app
